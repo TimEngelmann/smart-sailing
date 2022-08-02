@@ -23,4 +23,5 @@ Next, it was time to generate some insights. Check out the jupyter notebook for 
 ## sail_pressure
 In addition to the boat data, we somehow wanted to include the trim of the sail in our models. So our idea was to measure the pressure needed to turn the winch further. However, we quickly realized that the recorded data was way too noisy and was barely correlated with the current trim of the sail. However, for the sake of completeness, here the circuit diagram of our "measuring tool":
 <img src="https://user-images.githubusercontent.com/46136690/182480501-4e4adc49-e393-4f2a-9d39-cc150c05f4f1.jpg" width="400">
+
 The microcontroller connected to the hotspot of my phone and wrote its pressure measurements in batches to a firebase database. This data could then be matched with the other data via the timestamp.
