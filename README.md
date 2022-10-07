@@ -18,7 +18,14 @@ The boat has an internal system, that records all kinds of data already. Wind Sp
 - kurs: Heading of boat
 
 ## sail_analysis
-Next, it was time to generate some insights. Check out the jupyter notebook for more details. In short, the bigger foresail (Code0) does make the boat go faster across various wind speeds. And our crew did not quite reach the performance that a professional crew did.
+Next, it was time to generate some insights. Check out the jupyter notebook for more details. Here are some key insights.
+We compared the boat speed when sailing with the genua vs the bigger foresail (Code0). On broad wind courses, the Code0 clearly makes the boat go faster across various wind speeds:
+
+<img src="https://user-images.githubusercontent.com/46136690/194551590-ffb9cd05-878d-4fca-b55f-0409cb65756c.jpg" width="800">
+
+Also we were curious how our Crew performed. We fitted a polynomial function on our mean speed when sailing with the genua (dashed lines). The plot also shows the speeds that a professional 6 person crew reaches with new sails and optimal conditions. As expected we did not reach these numbers, and especially on close haul we see significant improvement potential. The right plot shows the ratio of our speed and the reference speed:
+
+<img src="https://user-images.githubusercontent.com/46136690/194553020-adab069a-b886-4f08-a919-719ecea1ab64.jpg" width="800">
 
 ## sail_pressure
 In addition to the boat data, we somehow wanted to include the trim of the sail in our models. So our idea was to measure the pressure needed to turn the winch further. However, we quickly realized that the recorded data was way too noisy and was barely correlated with the current trim of the sail. However, for the sake of completeness, here the circuit diagram of our "measuring tool":
